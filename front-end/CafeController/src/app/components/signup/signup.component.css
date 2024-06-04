@@ -1,0 +1,44 @@
+.example-spacer{
+    flex: 1 1 auto;
+}
+
+/* .mat-toolbar{
+    margin: -24px;
+    width: auto;
+    margin-bottom: 10px;
+} */
+
+mat-form-field{
+    padding: 5px;
+}
+mat-hint{
+    color: red;
+}
+mat-dialog-content{
+    width: auto;
+    height: auto;
+}
+
+::ng-deep .mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+}
+
+::ng-deep mat-form-field {
+    width: 100%;
+}
+
+::ng-deep .mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 0 0;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}

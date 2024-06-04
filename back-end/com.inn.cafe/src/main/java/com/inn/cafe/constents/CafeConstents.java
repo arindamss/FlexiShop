@@ -1,0 +1,12 @@
+package com.inn.cafe.constents;
+
+public class CafeConstents {
+    
+    public static final String SOMETHING_WENT_WRONG="Something Went Wrong";
+
+    public static final String INVALID_DATA="Invalid Data";
+
+    public static final String UNAUTHORIZED_ACCESS="Unauthorized Access.";
+
+    public static final String STORAGE_LOCATION="C:\\Users\\PC\\MCA\\Spring Boot\\Cafe Management System\\back-end\\com.inn.cafe\\src\\main\\resources\\static";
+}

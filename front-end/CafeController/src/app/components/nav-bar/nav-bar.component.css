@@ -1,0 +1,38 @@
+.custom-toolbar {
+  background-color: #9233ff; /* Baby pink color */
+  color: white; /* Adjust text color if necessary */
+}
+
+.custom-toolbar .toolbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-toolbar .link {
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+  font-size: 24px;
+  padding-left: 5px; /* Adjust as needed */
+}
+
+.custom-toolbar .logo {
+  margin-bottom: 0; /* Reset if previously set */
+  width: 40px;
+  height: 40px;
+}
+
+.custom-toolbar .logo-link {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.custom-toolbar .example-spacer {
+  flex: 1 1 auto; /* This makes the spacer take up all the remaining space */
+}
+
+.custom-toolbar button {
+  margin: 0 8px;
+}

@@ -1,0 +1,27 @@
+package com.inn.cafe.service;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.http.ResponseEntity;
+
+import com.inn.cafe.wrapper.UserWrapper;
+
+public interface UserService {
+    
+
+    public ResponseEntity<String> signup(Map<String,String> requestMap);
+
+    public ResponseEntity<String> login(Map<String, String> requestMap);
+
+    public ResponseEntity<List<UserWrapper>> getAllUser();
+
+    public ResponseEntity<String> update(Map<String, String> requestMap);
+
+    public ResponseEntity<String> checkToken();
+
+    public ResponseEntity<String> changePassword(Map<String, String> requestMap);
+
+    public ResponseEntity<String> forgotPassword(Map<String, String> requestMap);
+
+}

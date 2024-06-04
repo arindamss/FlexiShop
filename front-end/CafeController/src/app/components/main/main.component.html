@@ -1,0 +1,23 @@
+<ng-container *ngIf="checkLogin(); else logoutContant">
+  <div class="app-header">
+    <app-header></app-header>
+  </div>
+  <div class="container">
+    <app-sidenav></app-sidenav>
+  </div>
+</ng-container>
+
+<ng-template #logoutContant>
+  <div class="navBar">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div class="landingPage">
+    <app-dashbord></app-dashbord>
+  </div>
+</ng-template>
+
+<div class="content" [ngClass]="isSidebarVisible ? 'with-sidebar' : 'without-sidebar'">
+  <!-- Your main content goes here -->
+  <router-outlet></router-outlet>
+  <ngx-ui-loader></ngx-ui-loader>
+</div>

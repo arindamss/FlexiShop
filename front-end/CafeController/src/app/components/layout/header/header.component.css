@@ -1,0 +1,50 @@
+.custom-toolbar {
+  background-color: #322653; /* Replace with your desired background color */
+  color: white; /* Ensures text is visible against the background */
+}
+
+.neumorphic-button {
+  background-color: #322653; /* Match toolbar background color */
+  color: white; /* Ensures icon color matches toolbar text color */
+  border: none;
+  outline: none;
+}
+.mat-icon-button {
+  /* Background color of the button */
+  border-radius: 50%; /* Make the button round */
+  width: 40px; /* Adjust the button width as needed */
+  height: 40px; /* Adjust the button height as needed */
+ 
+}
+
+.notification-icon mat-icon,
+.neumorphic-button mat-icon {
+  color: white; /* Ensures icon color matches toolbar text color */
+}
+
+/* Remove the default background for the mat-toolbar buttons */
+.mat-toolbar button.mat-icon-button {
+  background-color: #3f51b5; /* Match toolbar background color */
+}
+
+.mat-toolbar button.mat-icon-button:hover {
+  background-color: #3949ab; /* Slightly darker shade for hover effect */
+}
+
+.mat-toolbar button.mat-button {
+  background-color: #3f51b5; /* Match toolbar background color */
+  color: white; /* Ensures text color matches */
+}
+
+.mat-toolbar button.mat-button:hover {
+  background-color: #3949ab; /* Slightly darker shade for hover effect */
+}
+
+/* Ensuring the spacer takes up the remaining space */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-icon{
+  height: 19px;
+}

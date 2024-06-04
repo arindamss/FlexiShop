@@ -1,0 +1,24 @@
+<mat-toolbar class="custom-toolbar">
+  <div class="toolbar-content">
+    <a mat-icon-button routerLink="/" class="logo-link">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+    </a>
+    <a routerLink="/" class="link">CafeController</a>
+    <span class="example-spacer"></span>
+    <button mat-flat-button color="accent" (click)="loginDialog()">Login</button>
+    <button mat-flat-button color="accent" (click)="openDialog()">Signup</button>
+    <button mat-flat-button color="accent" (click)="forgotPasswordDialog()">Forgot Password</button>
+
+  </div>
+</mat-toolbar>
+
+
+<!-- <mat-toolbar *ngIf="checkLogin()" class="custom-toolbar">
+  <div class="toolbar_login_content">
+    <button mat-icon-button  aria-label="Example icon button with a menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer">CafeController</span>
+    <button mat-flat-button color="accent">Logout</button>
+  </div>
+</mat-toolbar> -->

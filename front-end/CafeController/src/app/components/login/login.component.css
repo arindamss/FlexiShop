@@ -1,0 +1,31 @@
+.example-spacer{
+    flex: 1 1 auto;
+}
+
+.dialog-content {
+    width: 100%;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px; /* Adjust the gap value as needed */
+    margin-top: 20px; /* Add some margin to separate from the form fields */
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 26px;
+  }
+  
+  .action-buttons button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mat-form-field {
+    margin-bottom: 16px; /* Add some space between form fields */
+  }
+  
