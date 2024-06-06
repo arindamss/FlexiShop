@@ -7,6 +7,9 @@ export const routes: Routes = [
         path:'cafe', 
         // component:MainComponent,
         canActivateChild:[authGuard],
+        data:{
+            roles:['admin','user']
+        },
         children:[
             {
                 path:'',

@@ -9,9 +9,9 @@ export class DashbordService {
 
   url=environment.apiURL;
 
-  constructor(private HttpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient) { }
 
   getDetails(){
-    this.HttpClient.get(this.url+"/dashbord/details");
+    return this.httpClient.get(this.url+"/dashbord/details");
   }
 }
