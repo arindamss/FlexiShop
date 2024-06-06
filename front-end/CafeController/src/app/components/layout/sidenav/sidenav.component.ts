@@ -2,15 +2,24 @@ import { Component } from '@angular/core';
 import { SidebarService } from '../../../services/sidebar.service';
 import { CommonModule } from '@angular/common';
 import { MatIcon } from '@angular/material/icon';
+import { jwtDecode } from 'jwt-decode';
+import {MatListModule} from '@angular/material/list';
+import { MenuItems } from '../../shared/menu-items';
+import { RouterLinkActive, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [CommonModule, MatIcon],
+  imports: [CommonModule, MatIcon, MatListModule, CommonModule, RouterModule ],
   templateUrl: './sidenav.component.html',
-  styleUrl: './sidenav.component.css'
+  styleUrl: './sidenav.component.css',
+  providers:[MenuItems]
 })
 export class SidenavComponent {
+
+  userRole:any;
+  token:any=localStorage.getItem('token');
+  tokenPayload:any;
 
   
   isSidebarVisible = true;
@@ -18,7 +27,10 @@ export class SidenavComponent {
   isDashboardSelected = false;
 
 
-  constructor(private sidebarService: SidebarService) {}
+  constructor(private sidebarService: SidebarService, public menuItems:MenuItems) {
+    this.tokenPayload=jwtDecode(this.token);
+    this.userRole=this.tokenPayload?.role
+  }
 
   ngOnInit() {
     this.sidebarService.sidebarVisibility$.subscribe((isVisible) => {
