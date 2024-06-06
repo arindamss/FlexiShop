@@ -1,8 +1,10 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 import { authGuard } from './services/auth.guard';
+import { DashbordComponent } from './components/dashbord/dashbord.component';
 
 export const routes: Routes = [
+    {path:'', component:DashbordComponent},
     {
         path:'cafe', 
         // component:MainComponent,
