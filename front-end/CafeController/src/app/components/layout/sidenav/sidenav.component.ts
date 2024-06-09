@@ -1,16 +1,20 @@
 import { Component } from '@angular/core';
 import { SidebarService } from '../../../services/sidebar.service';
 import { CommonModule } from '@angular/common';
-import { MatIcon } from '@angular/material/icon';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { jwtDecode } from 'jwt-decode';
 import {MatListModule} from '@angular/material/list';
 import { MenuItems } from '../../shared/menu-items';
 import { RouterLinkActive, RouterModule } from '@angular/router';
+import { AccordionDirective } from '../../../directives/accordion.directive';
+import { AccordionanchorDirective } from '../../../directives/accordionanchor.directive';
+import { AccordionlinkDirective } from '../../../directives/accordionlink.directive';
+// import {Accordion}
 
 @Component({
   selector: 'app-sidenav',
   standalone: true,
-  imports: [CommonModule, MatIcon, MatListModule, CommonModule, RouterModule ],
+  imports: [CommonModule, MatIconModule, MatListModule, CommonModule, RouterModule, AccordionDirective, AccordionanchorDirective, AccordionlinkDirective ],
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.css',
   providers:[MenuItems]

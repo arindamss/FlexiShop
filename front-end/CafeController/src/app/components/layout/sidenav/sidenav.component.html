@@ -1,8 +1,11 @@
 <div class="sidebar" [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }" [@fadeInOut]>
 
   <mat-nav-list appAccordion>
-    <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuItem()" routerLinkActive="selected" group="{{menuitem.state}}" >
-      <a href="" class></a>
+    <mat-list-item appAccordionlink *ngFor="let menuitem of menuItems.getMenuItem()" routerLinkActive="selected" group="{{menuitem.state}}" >
+      <a appAccordionToggle [routerLink]="['/cafe', menuitem.state]" *ngIf="menuitem.type === 'link' &&(menuitem.role === '' || menuitem.role === userRole)">
+        <mat-icon>{{menuitem.icon}}</mat-icon>
+        <span>{{menuitem.name}}</span>
+      </a>
     </mat-list-item>
   </mat-nav-list>
 
