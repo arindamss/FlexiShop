@@ -16,3 +16,7 @@
     padding: 20% !important;
     
 }
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
