@@ -9,7 +9,8 @@ export interface Menu {
 }
 
 const MENUITEMS = [
-    { state: 'dashbord', name: 'Dashbord', type: 'link', icon: 'dashboard', role: '' }
+    { state: 'dashbord', name: 'Dashbord', type: 'link', icon: 'dashboard', role: '' },
+    { state: 'category', name: 'Category', type: 'link', icon: 'category', role: 'admin' }
 ];
 
 @Injectable({ providedIn: 'root' }) // Register as root provider

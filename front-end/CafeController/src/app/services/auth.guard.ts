@@ -6,7 +6,7 @@ import { SnackbarService } from './snackbar.service';
 import { GlobalConstants } from '../components/shared/global-constants';
 
 export const authGuard: CanActivateFn = (route, state) => {
-  debugger
+  // debugger
 
   const loginService=inject(LoginService)
   const rout=inject(Router)

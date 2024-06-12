@@ -24,6 +24,7 @@
   left: 0;
   overflow-x: hidden;
   margin-top: 48px;
+  z-index: 999;
 }
 
 .sidebar ul {
@@ -92,7 +93,13 @@ mat-list-item{
   margin: 5px;
 }
 
-.mdc-list :hover {
+mat-nav-list :hover{
   background-color: white;
   color: #000000;
+  
 }
+
+/* .mdc-list :hover {
+  background-color: white;
+  color: #000000;
+} */

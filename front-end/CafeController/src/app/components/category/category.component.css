@@ -1,0 +1,41 @@
+body.with-sidebar {
+    margin-left: 16%;
+    width: 80%;
+
+}
+
+body.without-sidebar {
+    margin-left: 8%;
+    width: 84%;
+}
+
+mat-card {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.float-right {
+
+    float: right;
+}
+
+table {
+    width: 100%;
+}
+
+::ng-deep .highlight {
+    color: white;
+    background: #673AB7;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.responsive-table{
+    margin: 10px 0px ;
+}
