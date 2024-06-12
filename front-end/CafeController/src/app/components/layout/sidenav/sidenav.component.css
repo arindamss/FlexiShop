@@ -15,7 +15,7 @@
 }
 
 .sidebar {
-  background-color: #322653;
+  background-color: rgb(50, 38, 83);
   width: 200px;
   padding: 20px;
   position: fixed;
@@ -24,6 +24,7 @@
   left: 0;
   overflow-x: hidden;
   margin-top: 48px;
+  z-index: 999;
 }
 
 .sidebar ul {
@@ -46,7 +47,8 @@
 }
 
 .sub-menu {
-  padding-left: 20px; /* Adjust the value to your desired padding */
+  padding-left: 20px;
+  /* Adjust the value to your desired padding */
 }
 
 .hideSidebar {
@@ -61,3 +63,43 @@
   opacity: 1;
   transition: transform 0.3s, opacity 0.3s;
 }
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+mat-nav-list a {
+  list-style: none;
+  text-decoration: none;
+  color: #d4d4d4;
+  height: 45px;
+  padding: 0 4px;
+  margin-bottom: 0px;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+mat-nav-list .selected {
+  background-color: white;
+}
+
+mat-nav-list .selected a{
+  color: black;
+}
+
+mat-list-item{
+  margin: 5px;
+}
+
+mat-nav-list :hover{
+  background-color: white;
+  color: #000000;
+  
+}
+
+/* .mdc-list :hover {
+  background-color: white;
+  color: #000000;
+} */

@@ -1,6 +1,7 @@
 .custom-toolbar {
   background-color: #322653; /* Replace with your desired background color */
   color: white; /* Ensures text is visible against the background */
+  z-index: 999;
 }
 
 .neumorphic-button {
@@ -47,4 +48,8 @@
 
 .mat-icon{
   height: 19px;
+}
+
+.mat-icon[_ngcontent-ng-c1738369994] {
+  height: 23px;
 }

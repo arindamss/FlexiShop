@@ -1,5 +1,19 @@
 <div class="sidebar" [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }" [@fadeInOut]>
-  <ul>
+
+  <mat-nav-list appAccordion>
+    <mat-list-item appAccordionlink *ngFor="let menuitem of menuItems.getMenuItem()" routerLinkActive="selected" group="{{menuitem.state}}" >
+      <a appAccordionToggle [routerLink]="['/cafe', menuitem.state]" *ngIf="menuitem.type === 'link' &&(menuitem.role === '' || menuitem.role === userRole)" class="item">
+        <mat-icon>{{menuitem.icon}}</mat-icon>
+        <span>{{menuitem.name}}</span>
+      </a>
+    </mat-list-item>
+  </mat-nav-list>
+
+
+
+
+
+  <!--<ul>
     <li>
       <a routerLinkActive="active" (click)="toggleSubmenu()">
         <span class="menu-icon material-icons">dashboard</span>
@@ -8,7 +22,7 @@
           <mat-icon>{{ isSubmenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
         </span>
       </a>
-      <!-- Sub-menu for Dashboard with left padding -->
+      
       <ul *ngIf="isSubmenuOpen" class="sub-menu">
         <li><a routerLink="/dashboard" routerLinkActive="active"><span class="menu-icon material-icons">details</span><span class="menu-text">Details</span></a></li>
         <li><a routerLink="/dashboard/messages" routerLinkActive="active"><span class="menu-icon material-icons">message</span><span class="menu-text">Messages</span></a></li>
@@ -44,6 +58,6 @@
         <span class="menu-text">Setting</span>
       </a>
     </li>
-  </ul>
+  </ul> -->
 </div>
 
