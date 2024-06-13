@@ -14,7 +14,7 @@
             <div fxLayout="row wrap">
                 <mat-form-field appearance="fill" fxFlex>
                     <mat-label>Name</mat-label>
-                    <input matInput formControlName="name" required>
+                    <input class="input" matInput formControlName="name" required>
                     <mat-error *ngIf="categoryForm.controls.name.touched || categoryForm.controls.name.invalid">
                         <span *ngIf="categoryForm.controls.name.errors.required">This Field is Required</span>
                         <span *ngIf="categoryForm.controls.name.errors.invalid">Invalid Value</span>

@@ -2,3 +2,10 @@ mat-toolbar{
     margin-bottom: 10px;
     width: auto;  
 }
+.example-spacer{
+    flex: 1 1 auto;
+}
+
+.mat-mdc-form-field{
+    width: 100%;
+}

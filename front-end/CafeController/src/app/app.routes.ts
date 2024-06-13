@@ -38,6 +38,16 @@ export const routes: Routes = [
                 loadComponent: () => import('./components/category/category.component').then((d) =>{
                     return d.CategoryComponent  
                 })
+            },
+            {
+                path:'product',
+                canActivate:[authGuard],
+                data:{
+                    roles:['admin']
+                },
+                loadComponent:() => import('./components/manage-product/manage-product.component').then((d) =>{
+                    return d.ManageProductComponent
+                })
             }
 
         ]

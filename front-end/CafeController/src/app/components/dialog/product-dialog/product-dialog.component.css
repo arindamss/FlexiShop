@@ -1,0 +1,33 @@
+.mat-toolbar {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+mat-form-field {
+    padding: 5px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.row {
+    width: 100%;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.row2 mat-form-field {
+    flex: 1 1 45%;
+    min-width: 200px;
+
+}
+
+.input {
+    width: 100%;
+}

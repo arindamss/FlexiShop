@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoginService } from '../../services/login.service';
+import { CategoryComponent } from '../category/category.component';
+import { ManageProductComponent } from '../manage-product/manage-product.component';
 
 
 const ngxUiLoaderConfig : NgxUiLoaderConfig={
@@ -30,7 +32,7 @@ const ngxUiLoaderConfig : NgxUiLoaderConfig={
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [HeaderComponent, SidenavComponent,NavBarComponent, DashbordComponent, RouterModule, CommonModule, RouterModule, NgxUiLoaderModule],
+  imports: [HeaderComponent, SidenavComponent,NavBarComponent, DashbordComponent, RouterModule, CommonModule, RouterModule, NgxUiLoaderModule, CategoryComponent, ManageProductComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
