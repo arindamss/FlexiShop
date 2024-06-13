@@ -17,31 +17,22 @@ mat-card {
     display: inline-block;
     justify-content: space-between;
 }
-
-.float-right {
-
+.float-right{
     float: right;
 }
 
-table {
+mat-card{
+    padding: 20px;
+}
+
+table{
     width: 100%;
 }
-
-::ng-deep .highlight {
-    color: white;
-    background: #673AB7;
-}
-
-.example-spacer {
-    flex: 1 1 auto;
-}
-
-.responsive-table{
-    margin: 10px 0px ;
-}
-
 .mat-mdc-form-field{
     width: 100%;
     
 }
 
+.responsive_table{
+    margin-top: 10px;
+}

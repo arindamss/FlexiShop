@@ -108,7 +108,7 @@ public class UserServiceImpl implements UserService {
                     log.info("I am in 3rd");
                     return new ResponseEntity<String>(
                             "{\"token\":\"" + jwtHelper.generateToken(customUserDetails.getUserDetails().getEmail(),
-                                    customUserDetails.getUserDetails().getRole()) + "\"}",
+                                    customUserDetails.getUserDetails().getRole()) + "\",\"message\":\"Login Successfull\"}",
                             HttpStatus.OK);
                 } else {
                     return new ResponseEntity<String>("\"message\":\"Wait for Admin approval.\"",
