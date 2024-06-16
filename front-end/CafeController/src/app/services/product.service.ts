@@ -30,4 +30,13 @@ export class ProductService {
   updateStatus(data:any){
     return this.http.post(this.url+'/product/updateStatus',data,{headers: new HttpHeaders().set('Content-Type','application/json')})
   }
+
+  getProductByCategory(id:any){
+    return this.http.get(this.url+"/product/getByCategory/"+id)
+  }
+
+  getById(id:any){
+    return this.http.get(this.url+"/product/getById/"+id)
+  }
+
 }

@@ -16,7 +16,7 @@ export const routes: Routes = [
         children:[
             {
                 path:'',
-                redirectTo:'cafe/dashbord',
+                redirectTo:'/cafe/dashbord',
                 pathMatch:'full'
             },
             {
@@ -47,6 +47,26 @@ export const routes: Routes = [
                 },
                 loadComponent:() => import('./components/manage-product/manage-product.component').then((d) =>{
                     return d.ManageProductComponent
+                })
+            },
+            {
+                path:'order',
+                canActivate:[authGuard],
+                data:{
+                    roles:['admin','user']
+                },
+                loadComponent: () => import('./components/order/order.component').then((d)=>{
+                    return d.OrderComponent
+                })
+            },
+            {
+                path:'bill',
+                canActivate:[authGuard],
+                data:{
+                    roles:['admin','user']
+                },
+                loadComponent: () => import('./components/view-bill/view-bill.component').then((d)=>{
+                    return d.ViewBillComponent
                 })
             }
 

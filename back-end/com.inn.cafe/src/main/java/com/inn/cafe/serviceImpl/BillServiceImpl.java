@@ -90,10 +90,10 @@ public class BillServiceImpl implements BillService {
                 }
 
                 document.add(table);
-                Paragraph footer=new Paragraph("Total : "+requestMap.get("totalAmmount")+"Thank you for visiting. Please visit again", getFont("Data"));
+                Paragraph footer=new Paragraph("Total : "+requestMap.get("totalAmount")+"\nThank you for visiting. Please visit again", getFont("Data"));
                 document.add(footer);
                 document.close();
-                return new ResponseEntity<>("{\"uuid\":" +filename+"\"}", HttpStatus.OK);
+                return new ResponseEntity<>("{\"uuid\":\"" +filename+"\"}", HttpStatus.OK);
 
             }
             return CafeUtils.getResponseEntity("Required Data not present", HttpStatus.BAD_REQUEST);
@@ -107,7 +107,7 @@ public class BillServiceImpl implements BillService {
         log.info("Inside addRow");
         table.addCell((String)data.get("name"));
         table.addCell((String)data.get("category"));
-        table.addCell((String)data.get("quantity"));
+        table.addCell(String.valueOf(data.get("quantity")));
         table.addCell(Double.toString((Double)data.get("price")));
         table.addCell(Double.toString((Double)data.get("price")));
 
