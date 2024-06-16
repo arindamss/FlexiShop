@@ -96,8 +96,10 @@ mat-list-item{
 mat-nav-list :hover{
   background-color: white;
   color: #000000;
+  border-radius: 4px;
   
 }
+
 
 /* .mdc-list :hover {
   background-color: white;
