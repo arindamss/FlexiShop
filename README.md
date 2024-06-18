@@ -37,6 +37,24 @@ FlexiShop is a web application built to manage shops efficiently. It provides fu
 - **PDF Generation and Download:**
   - Both admins and users can generate bills in PDF format.
   - PDFs can be downloaded for offline access or printing.
+## Screenshots
+
+Below are some screenshots of the FlexiShop application:
+
+![Login Page](screenshots/login.png)
+*Login Page*
+
+![Admin Dashboard](screenshots/admin_dashboard.png)
+*Admin Dashboard*
+
+![Product Management](screenshots/product_management.png)
+*Product Management*
+
+![Generate Bill](screenshots/generate_bill.png)
+*Generate Bill*
+
+![User Profile](screenshots/user_profile.png)
+*User Profile*
 
 ## Technologies Used
 
