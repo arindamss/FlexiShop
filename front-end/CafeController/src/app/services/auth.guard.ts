@@ -27,6 +27,7 @@ export const authGuard: CanActivateFn = (route, state) => {
   }
   catch(err){
     localStorage.clear();
+    console.log("I am in Auth guard");
     rout.navigate(['/'])
   }
   

@@ -81,6 +81,7 @@ export const routes: Routes = [
             }
 
         ]
-    }
+    },
+    {path:'**', redirectTo:'cafe'},
     
 ];
