@@ -7,7 +7,7 @@ import { CategoryComponent } from './components/category/category.component';
 export const routes: Routes = [
     {path:'', component:DashbordComponent},
     {
-        path:'cafe', 
+        path:'shop', 
         // component:MainComponent,
         // canActivateChild:[authGuard],
         // data:{
@@ -16,7 +16,7 @@ export const routes: Routes = [
         children:[
             {
                 path:'',
-                redirectTo:'/cafe/dashbord',
+                redirectTo:'/shop/dashbord',
                 pathMatch:'full'
             },
             {
@@ -82,6 +82,6 @@ export const routes: Routes = [
 
         ]
     },
-    {path:'**', redirectTo:'cafe'},
+    {path:'**', redirectTo:'shop'},
     
 ];

@@ -45,7 +45,7 @@ export const authGuard: CanActivateFn = (route, state) => {
       return true;
     }
     snackbar.openSnackbar(GlobalConstants.unauthorized,GlobalConstants.error)
-    rout.navigate(['/cafe/dashbord'])
+    rout.navigate(['/shop/dashbord'])
     return false;
   }
   else{

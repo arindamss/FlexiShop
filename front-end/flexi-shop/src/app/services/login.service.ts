@@ -24,7 +24,7 @@ export class LoginService {
       return false;
     }
     else{
-      // this.route.navigate(['/cafe/dashbord'])
+      // this.route.navigate(['/shop/dashbord'])
       return true;
     }
   }

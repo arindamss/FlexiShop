@@ -13,7 +13,7 @@ export class DashbordComponent implements OnInit {
 
   constructor(private loginService:LoginService, private route:Router){
     if(this.loginService.isLogined()){
-      this.route.navigate(['/cafe/dashbord'])
+      this.route.navigate(['/shop/dashbord'])
     }
   }
 

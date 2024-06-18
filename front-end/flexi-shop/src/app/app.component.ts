@@ -18,6 +18,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'CafeController';
+  title = 'FlexiShop';
   constructor(private http:HttpClient){}
 }
