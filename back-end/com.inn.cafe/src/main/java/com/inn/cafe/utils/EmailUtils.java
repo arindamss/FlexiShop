@@ -46,9 +46,16 @@ public class EmailUtils {
     private String[] getToArray(List<String> allAdmin){
         int index=0;
         String []admins=new String[allAdmin.size()];
+        System.out.println("I am inside Loop");
+        System.out.println(allAdmin);
         for(String admin:allAdmin){
             admins[index++]=admin;
         }
+        System.out.println("All the Emails : ");
+        for(String a:admins){
+            System.out.println(a);
+        }
+
         return admins;
     }
 

@@ -68,6 +68,16 @@ export const routes: Routes = [
                 loadComponent: () => import('./components/view-bill/view-bill.component').then((d)=>{
                     return d.ViewBillComponent
                 })
+            },
+            {
+                path:'user',
+                canActivate:[authGuard],
+                data:{
+                    roles:['admin']
+                },
+                loadComponent: () => import('./components/manage-user/manage-user.component').then((d)=>{
+                    return d.ManageUserComponent
+                })
             }
 
         ]

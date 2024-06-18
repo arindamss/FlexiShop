@@ -13,7 +13,8 @@ const MENUITEMS = [
     { state: 'category', name: 'Category', type: 'link', icon: 'category', role: 'admin' },
     { state: 'product', name: 'Product', type: 'link', icon: 'inventory_2', role: 'admin' },
     { state: 'order', name: 'Order', type: 'link', icon: 'shopping_cart', role: '' },
-    { state: 'bill', name: 'Bill', type: 'link', icon: 'backup_table', role: '' }
+    { state: 'bill', name: 'Bill', type: 'link', icon: 'backup_table', role: '' },
+    { state: 'user', name: 'User', type: 'link', icon: 'people', role: 'admin' }
 ];
 
 @Injectable({ providedIn: 'root' }) // Register as root provider
