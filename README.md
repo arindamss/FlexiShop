@@ -115,6 +115,4 @@ Below are some screenshots of the FlexiShop application:
 
 - Arindam Karmakar
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
