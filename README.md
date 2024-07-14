@@ -44,13 +44,13 @@ Below are some screenshots of the FlexiShop application:
 ![Login Page](img/A1.png)
 *Login Page*
 
-![Admin Dashboard](screenshots/admin_dashboard.png)
+![Admin Dashboard](img/A2.png)
 *Admin Dashboard*
 
-![Product Management](screenshots/product_management.png)
+![Product Management](img/A3.png)
 *Product Management*
 
-![Generate Bill](screenshots/generate_bill.png)
+![Generate Bill](img/A4.png)
 *Generate Bill*
 
 ![User Profile](screenshots/user_profile.png)
