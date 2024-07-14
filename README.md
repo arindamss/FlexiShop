@@ -45,16 +45,15 @@ Below are some screenshots of the FlexiShop application:
 *Login Page*
 
 ![Admin Dashboard](img/A2.png)
-*Admin Dashboard*
+*Product Page*
 
 ![Product Management](img/A3.png)
-*Product Management*
-
-![Generate Bill](img/A4.png)
 *Generate Bill*
 
-![User Profile](screenshots/user_profile.png)
-*User Profile*
+![Generate Bill](img/A4.png)
+*Bills Management*
+
+
 
 ## Technologies Used
 
