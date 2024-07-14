@@ -41,7 +41,7 @@ FlexiShop is a web application built to manage shops efficiently. It provides fu
 
 Below are some screenshots of the FlexiShop application:
 
-![Login Page](screenshots/login.png)
+![Login Page](img/Screenshot 2024-06-18 130307.png)
 *Login Page*
 
 ![Admin Dashboard](screenshots/admin_dashboard.png)
